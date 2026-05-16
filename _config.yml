@@ -1,0 +1,29 @@
+title: "Channabasappa Muttal"
+tagline: "TexAI PhD – Circular textiles and digital twins"
+description: "PhD student in TextileAI (TexAI) at the Department of Informatics, University of Boras, Sweden. Research on AI-driven circular textile systems and digital twin technologies."
+baseurl: ""
+url: "https://channumuttal.github.io"
+
+theme: minima
+
+header_pages:
+  - index.md
+  - research.md
+  - projects.md
+  - publications.md
+  - about.md
+
+author:
+  name: "Channabasappa Muttal"
+  email: "channumuttal@outlook.com"
+
+github_username: channumuttal
+
+plugins:
+  - jekyll-seo-tag
+
+minima:
+  skin: classic
+
+sass:
+  style: compressed
