@@ -1,0 +1,188 @@
+---
+---
+
+@import "minima";
+
+/* ======================
+   TextileAI Custom CSS
+   ====================== */
+
+/* Google Font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+/* Root variables */
+:root {
+  --primary:   #5A31F4;
+  --teal:      #00B3A6;
+  --coral:     #FF7A59;
+  --dark:      #2B1A66;
+  --light-bg:  #F7F7FB;
+  --card-bg:   #ffffff;
+  --text:      #222222;
+}
+
+body {
+  background: var(--light-bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ---- HEADER ---- */
+.site-header {
+  background: linear-gradient(135deg, #5A31F4 0%, #00B3A6 100%);
+  border-bottom: none;
+  padding: 0.6rem 0;
+  box-shadow: 0 2px 20px rgba(90,49,244,0.18);
+}
+
+.site-title, .site-title:visited {
+  color: #fff !important;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.01em;
+}
+
+.site-title:hover { color: #FFE9DF !important; text-decoration: none; }
+
+.site-nav .page-link {
+  color: rgba(255,255,255,0.92) !important;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  margin-left: 1.4rem;
+  transition: color 0.2s;
+}
+
+.site-nav .page-link:hover { color: #FFE9DF !important; }
+
+/* hamburger on mobile */
+.site-nav .menu-icon > svg { fill: #fff; }
+
+/* ---- HERO ---- */
+.hero {
+  background: linear-gradient(135deg,
+    rgba(90,49,244,0.10) 0%,
+    rgba(0,179,166,0.10) 100%);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 16px 40px rgba(90,49,244,0.07);
+  border: 1px solid rgba(90,49,244,0.08);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  color: var(--dark);
+  margin-bottom: 0.3rem;
+  line-height: 1.2;
+}
+
+.hero h2 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+}
+
+.hero p {
+  max-width: 660px;
+  color: #444;
+  font-size: 1.02rem;
+}
+
+/* ---- SECTION HEADINGS ---- */
+h1, h2, h3 {
+  color: var(--dark);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+h2 { border-left: 4px solid var(--teal); padding-left: 0.75rem; margin-top: 2rem; }
+
+/* ---- CARD GRID ---- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 1.6rem 1.5rem;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.06);
+  border: 1px solid rgba(90,49,244,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(90,49,244,0.13);
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.card-tag {
+  display: inline-block;
+  padding: 0.18rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  background: linear-gradient(90deg, rgba(0,179,166,0.12), rgba(90,49,244,0.10));
+  color: var(--teal);
+  margin-bottom: 0.7rem;
+}
+
+/* ---- LINKS ---- */
+a, a:visited { color: var(--coral); }
+a:hover { color: #c0553a; text-decoration: none; }
+
+/* ---- PUBLICATION LIST ---- */
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pub-item {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid var(--primary);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  transition: border-color 0.2s;
+}
+
+.pub-item:hover { border-color: var(--teal); }
+
+/* ---- FOOTER ---- */
+.site-footer {
+  background: var(--dark);
+  color: rgba(255,255,255,0.80);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  border-top: none;
+}
+
+.site-footer a, .site-footer a:visited { color: #FFCFB3; }
+.site-footer a:hover { color: #fff; }
+
+/* ---- WRAPPER ---- */
+.wrapper { max-width: 960px; }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 600px) {
+  .hero { padding: 2rem 1.4rem; }
+  .hero h1 { font-size: 2rem; }
+}
